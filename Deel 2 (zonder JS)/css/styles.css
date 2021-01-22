@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lucinda Sans Unicode", sans-serif;
+}
+
+.header {
+    background-color: #E50914;
+    color: #F5F5F1;
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.flex-item {
+    background-color: #E50914;
+    padding: 30px;
+    flex: 50%;
+    border: 1px solid;
+    margin: 30px;
+    color:  #F5F5F1;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    img {
+        display: none;
+    }
+    .col-6 {
+        width: 100%
+    }
+}
+
+.row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+[class*='col-'] {
+    float: left;
+    /*padding: 15%*/
+}
+
+.list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    background-color: #B81D24;
+    margin-bottom: 7px;
+    padding: 8px;
+    color:  #221F1F
+}
+
+.footer {
+    background-color: #B81D24;
+    color: #221F1F;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+img {
+    align-self: flex-start;
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+    
+}
+
+@media (min-width: 1200px) {
+
+}
+/* Ik heb mijn best gedaan maar krijg de afbeeldingen niet juist. Ze zijn wel weg geraakt op kleine schermen. */
